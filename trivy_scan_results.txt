@@ -1,0 +1,30 @@
+2024-02-02T14:54:48.744Z	[34mINFO[0m	Need to update DB
+2024-02-02T14:54:48.744Z	[34mINFO[0m	Downloading DB...
+2024-02-02T14:55:00.062Z	[34mINFO[0m	Detected OS: alpine
+2024-02-02T14:55:00.062Z	[33mWARN[0m	This OS version is not on the EOL list: alpine 3.19
+2024-02-02T14:55:00.062Z	[34mINFO[0m	Detecting Alpine vulnerabilities...
+2024-02-02T14:55:00.062Z	[34mINFO[0m	Number of PL dependency files: 1
+2024-02-02T14:55:00.062Z	[34mINFO[0m	Detecting yarn vulnerabilities...
+2024-02-02T14:55:00.065Z	[33mWARN[0m	This OS version is no longer supported by the distribution: alpine 3.19.1
+2024-02-02T14:55:00.065Z	[33mWARN[0m	The vulnerability detection may be insufficient because security updates are not provided
+
+getting-started:latest (alpine 3.19.1)
+======================================
+Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
+
+
+app/yarn.lock
+=============
+Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 2, CRITICAL: 0)
+
++----------------------+------------------+----------+-------------------+---------------+---------------------------------------+
+|       LIBRARY        | VULNERABILITY ID | SEVERITY | INSTALLED VERSION | FIXED VERSION |                 TITLE                 |
++----------------------+------------------+----------+-------------------+---------------+---------------------------------------+
+| http-cache-semantics | CVE-2022-25881   | HIGH     | 4.1.0             | 4.1.1         | http-cache-semantics vulnerable to    |
+|                      |                  |          |                   |               | Regular Expression Denial of Service  |
+|                      |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2022-25881 |
++----------------------+------------------+          +-------------------+---------------+---------------------------------------+
+| json5                | CVE-2022-46175   |          | 2.2.1             | 1.0.2, 2.2.2  | json5: Prototype Pollution            |
+|                      |                  |          |                   |               | in JSON5 via Parse Method             |
+|                      |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2022-46175 |
++----------------------+------------------+----------+-------------------+---------------+---------------------------------------+
